@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown main link */
+.dropdown > a {
+  text-decoration: none;
+  color: var(--dark-brown);
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--cream);
+  min-width: 160px;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  z-index: 100;
+  flex-direction: column;
+}
+
+/* Dropdown items */
+.dropdown-menu a {
+  padding: 0.5rem 1rem;
+  display: block;
+  color: var(--dark-brown);
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Hover effect */
+.dropdown-menu a:hover {
+  background-color: var(--taupe);
+  color: white;
+  border-radius: 4px;
+}
+
+/* Show menu on hover */
+.dropdown:hover .dropdown-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+    </style>
+</head>
+<body>
+<div class="nav-links" id="navLinks">
+  <a href="index.php">Home</a>
+
+  <!-- Shop Dropdown -->
+  <div class="dropdown">
+    <a href="#">Shop ▼</a>
+    <div class="dropdown-menu">
+      <a href="perfumes.php">Perfumes</a>
+      <a href="collections.php">Collections</a>
+      <a href="offers.php">Offers</a>
+    </div>
+  </div>
+
+  <a href="about.php">About</a>
+  <a href="#">Contact</a>
+</div>
+
+
+</body>
+</html>

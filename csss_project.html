@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style> 
+        *{
+
+        }
+        .item{
+            display: flex;
+            width: 300px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .desciption{
+            text-align: center;
+        }
+        .skills_header{
+            text-align: center;
+        }
+
+        @media screen and (max-width:480px){
+            .skills_items{
+                display: grid;
+                grid-template-columns: 1fr;
+                place-items:center ;
+            }
+        }
+
+         @media screen and (min-width:480px) and (max-width:768px){
+            .skills_items{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 250px 250px 250px;
+                place-items:center ;
+            }
+        }
+
+         @media screen and (min-width:769px){
+            .skills_items{
+                /* border: 2px solid black; */
+                display: grid;
+                padding: 20px 40px;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 250px 250px ;
+                place-items:center ;
+            }
+        }
+
+    </style>
+  </head>
+  <body>
+    <section class="skills">
+      <div class="skills_header">
+        <h1>it my new project</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta
+          fugiat recusandae tempora ducimus dolores optio quam placeat sapiente
+          eaque.
+        </p>
+      </div>
+      <div class="skills_items">
+        <div class="item">
+          <img class="image" src="" alt="" />
+          <span class="title">Dokum anakizi</span>
+          <p class="desciption">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Necessitatibus, itaque.
+          </p>
+        </div>
+        <div class="item">
+          <img class="image" src="" alt="" />
+          <span class="title">Dokum anakizi</span>
+          <p class="desciption">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Necessitatibus, itaque.
+          </p>
+        </div>
+        <div class="item">
+          <img class="image" src="" alt="" />
+          <span class="title">Dokum anakizi</span>
+          <p class="desciption">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Necessitatibus, itaque.
+          </p>
+        </div>
+        <div class="item">
+          <img class="image" src="" alt="" />
+          <span class="title">Dokum anakizi</span>
+          <p class="desciption">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Necessitatibus, itaque.
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+   body {
+  border: 1px solid black;
+  background-color: black;
+}
+form {
+  margin: 10px auto;
+  border: 1px solid black;
+  /* width: fit-content; */
+  width: 500px;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: linen;
+  /* box-sizing: border-box; */
+}
+
+h1 {
+  text-align: center;
+}
+
+label {
+  display: block;
+  font-weight: 900;
+}
+
+input {
+  width: 100%;
+
+  padding: 10px 0px 10px 10px;
+  border-radius: 10px;
+  border: none;
+  /* border: 1px solid rgb(90, 76, 76); */
+  /* background-color: inherit; */
+}
+
+input:hover {
+  background-color: rgb(219, 213, 213);
+}
+
+input:focus {
+  outline: none;
+}
+
+#color {
+  width: 10%;
+  padding: 0px;
+}
+    </style>
+  </head>
+  <body>
+
+    <!-- <form action="">
+      <h1>User Form</h1>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" /><br /><br />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" /><br /><br />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" /><br /><br />
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" /><br /><br />
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" /><br /><br />
+
+      <label for="color">Favorite Color:</label>
+      <input type="color" id="color" name="color" /><br /><br />
+
+      <label for="website">Website:</label>
+      <input type="url" id="website" name="website" /><br /><br />
+
+      <input type="submit" value="Submit" />
+    </form> -->
+
+    
+    <form action="">
+      <fieldset>
+        <legend>Login Form</legend>
+        <label for="login-email">Email:</label>
+        <input type="email" id="login-email" name="login-email" />
+        <label for="password">Password</label>
+        <input type="password" id="login-password" name="login-password" />
+        <input id="submit" type="submit" value="Login" />
+      </fieldset>
+    </form>
+  </body>
+</html>
