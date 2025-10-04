@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index</title>
+</head>
+<style>
+    .container{
+       position: relative;
+    }
+    .black-box{
+         border: 2px solid black;
+        width: 600px;
+        height: 100px;
+
+    }
+    .gray-box{
+        border: 1px solid black;
+        width: 400px;
+        height: 50px;
+        left:40px ;
+        top: 53px;
+      background-color: rgb(95, 98, 98);
+        position:absolute;
+        z-index: 3;
+    }
+    .green-box{
+         border: 1px solid black;
+        width: 200px;
+        height: 110px;
+        left:200px ;
+        top: 3px;
+      background-color: rgb(35, 196, 83);
+        position:absolute;
+        z-index:_1;
+    }
+
+</style>
+<body>
+    <h1>web development</h1>
+    <p>has successfully completed the program</p>
+    <div class="container">
+        <div class="black-box">black box</div>
+        <div class="gray-box">gray box</div>
+        <div class="green-box">green box</div>
+
+    </div>
+</body>
+</html>
