@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .flex-container{
+        display: flex;
+        flex-wrap: wrap;    /*importent*/
+    }
+    .left-container{
+        background-color: antiquewhite;
+        height:100px;
+        width: 50%;
+        /* flex: 50%; */
+    }
+    .right-container{
+        background-color: rgb(57, 62, 130);
+        height:100px;
+        width: 50%;
+        /* flex: 50%; */
+    }
+    @media(max-width: 800px){
+        .left-container, .right-container{
+            width: 100%;
+        }
+    }
+</style>
+<body>
+    <div class="flex-container">
+        <div class="left-container">left</div>
+        <div class="right-container">right</div>
+
+    </div>
+</body>
+</html>
